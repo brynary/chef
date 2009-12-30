@@ -127,7 +127,8 @@ if defined?(Merb::Plugins)
       # enable slice-level default routes by default
       # scope.default_routes
     end
-    
+
+    loaded
     # Create the default admin user "admin" if no admin user exists  
     unless Chef::WebUIUser.admin_exist
       user = Chef::WebUIUser.new
